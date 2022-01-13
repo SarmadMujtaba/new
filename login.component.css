@@ -1,0 +1,49 @@
+
+.card{
+    
+    top: 10%;
+    left: 50%;
+    color: black;
+    padding: 40px;
+}
+nav{
+    background: rgb(29, 28, 29)
+}
+.note,.note2{
+    border: 1px solid white;
+    width: 240px;
+    padding: 1px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: justify;
+    font-size: small;
+}
+
+p{
+
+    color: white;
+    text-align: center;
+    margin-top: 0;
+}
+@media only screen and (max-width: 765px) {
+    .card{
+        width: 100%;
+        left: 0;
+        color: black;
+        padding: 3px;
+        margin: 0 auto;
+        font-size: medium;
+        vertical-align: auto;
+        top: 5%;
+    }
+    button{
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    nav{
+        background: rgb(29, 28, 29);
+    }
+  }
+
+ 

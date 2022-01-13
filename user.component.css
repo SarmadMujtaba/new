@@ -1,0 +1,18 @@
+nav{
+    background: rgb(29, 28, 29);
+}
+.card,#table{
+    margin: 30px;
+    padding: 30px;
+}
+h2{
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 15px;
+    background-color:turquoise;
+}
+#table{
+    text-align: center;
+}
+

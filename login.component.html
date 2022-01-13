@@ -1,0 +1,47 @@
+<nav class="navbar navbar-light">
+    <div class="container-fluid">
+        <h1 style="color: rgb(255, 255, 255); text-transform: uppercase;text-indent: 10px;">Course Allocator</h1>
+    </div>
+  </nav>
+
+  <div class="note">
+    <p> Admin Login Credentials :<br>
+        Email ID: admin@gmail.com <br>
+        Password: admin
+    </p>
+    </div>
+
+    <div class="note2">
+        <p> Application Flow :<br>
+            Add user through Admin <br>
+            Signup against newly added user <br>
+            Login and set Priority
+        </p>
+        </div>
+    
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card border border-dark rounded-3 shadow p-3 bg-light mb-5 bg-body rounded">
+                <div class="a">
+                    <h1>Login</h1>
+                    <form [formGroup]="loginForm" (ngSubmit)="login()">
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Email ID</label>
+                          <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                       </div>
+                        <div class="mb-3">
+                          <label for="password" class="form-label">Password</label>
+                          <input formControlName="password" type="password" class="form-control" id="password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button><br>
+                        <a routerLink="/signup">New User? Click to signup</a>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

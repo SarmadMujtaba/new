@@ -1,0 +1,89 @@
+<nav class="navbar navbar-light">
+    <div class="container-fluid">
+        <h1 style="color: rgb(255, 255, 255); text-transform: uppercase;text-indent: 10px;">Course Allocation</h1>
+    
+    <div class="d-flex">
+        <button class="btn btn-danger mx-3 px-3" routerLink="/login">Logout</button>
+    </div>
+</div>
+</nav>
+
+<div class="card bg-light border border-2 shadow p-3">
+    <div class="card-header">
+      <h1 style="background-color:turquoise; padding: 10px; text-transform: uppercase;">Your Profile</h1>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title" style="font-weight: bolder;"> NAME: </h5>
+      <h5 class="card-title" style="margin-left: 150px;"> {{list[0]}}</h5>
+      <h5 class="card-text" style="font-weight: bolder;"> EMAIL: </h5>
+      <h5 class="card-title" style="margin-left: 150px;"> {{list[1]}}</h5>
+      <h5 class="card-text" style="font-weight: bolder;"> PRIORITY 1:</h5>
+      <h5 class="card-text" style="margin-left: 150px;"> {{list2[2]}}</h5>
+      <h5 class="card-text" style="font-weight: bolder;"> PRIORITY 3:</h5>
+      <h5 class="card-text" style="margin-left: 150px;"> {{list2[3]}}</h5>
+      <h5 class="card-text" style="font-weight: bolder;"> PRIORITY 4:</h5>
+      <h5 class="card-text" style="margin-left: 150px;"> {{list2[4]}}</h5>
+      
+      <a class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Choose Priority</a>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Enter Course Names</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           
+            <form [formGroup]="priorityValue">
+                <div class="mb-3">
+                  <label for="p1" class="form-label">Priority 1</label>
+                  <input formControlName="p1" type="text" class="form-control" id="p1" aria-describedby="emailHelp">
+            
+                </div>
+                <div class="mb-3">
+                    <label for="p2" class="form-label">Priority 2</label>
+                    <input formControlName="p2" type="text" class="form-control" id="p2" aria-describedby="emailHelp">
+              
+                  </div>
+                  <div class="mb-3">
+                    <label for="p3" class="form-label">Priority 3</label>
+                    <input formControlName="p3" type="text" class="form-control" id="p3" aria-describedby="emailHelp">
+              
+                  </div>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="end" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="priorityDetails()" >Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="table">
+    <table class="table mt-3 bg-light border border-2 shadow p-3 mb-5 bg-body rounded">
+      
+      <thead>
+        <h2 class="headings">Available Courses</h2>
+          <tr class="row px-3">
+              <th class="col">Serial #</th>
+              <th class="col">Course Code</th>
+              <th class="col">Course Name</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="row px-3" *ngFor = "let row of Courses">
+              <td class="col">{{row.id}}</td>
+              <td class="col">{{row.code}}</td>
+              <td class="col">{{row.course}}</td>
+          </tr>
+      </tbody>
+    </table>
+    </div>
+    

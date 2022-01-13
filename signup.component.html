@@ -1,0 +1,30 @@
+<nav class="navbar navbar-light">
+    <div class="container-fluid">
+        <h1 style="color: rgb(255, 255, 255); text-transform: uppercase;text-indent: 10px;">Course Allocator</h1>
+    </div>
+  </nav>
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card border border-dark rounded-3 shadow p-3 mb-5 bg-body rounded">
+                <div>
+                    <h1>Signup</h1>
+                    <form [formGroup]="form" (ngSubmit)="signup()">
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Enter Email-ID</label>
+                          <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                       </div>
+                        <div class="mb-3">
+                          <label for="password" class="form-label">Set Password</label>
+                          <input formControlName="password" type="password" class="form-control" id="password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Signup</button><br>
+                        <a  routerLink="/login">Already have account? Click to login</a>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

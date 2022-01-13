@@ -1,0 +1,20 @@
+.card{
+    top: 30%;
+    left: 50%;
+    padding: 40px;
+}
+
+nav{
+    background: rgb(29, 28, 29)
+}
+
+@media only screen and (max-width: 768px) {
+    .card{
+        top: 20%;
+        left: 50%;
+        padding: 2px;
+        width: 100%;
+        left: 0;
+        font-size: medium;
+    }
+}

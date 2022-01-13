@@ -1,0 +1,53 @@
+{
+  "teachers": [
+    {
+      "name": "sarmad",
+      "email": "sarmad@gmail.com",
+      "id": 2,
+      "password": "sarmad",
+      "p1": "english",
+      "p2": "urdu",
+      "p3": "web"
+    },
+    {
+      "name": "ali",
+      "email": "ali@email.com",
+      "id": 3,
+      "password": "ali",
+      "p1": "WEB",
+      "p2": "DSA",
+      "p3": "DB"
+    },
+    {
+      "name": "usama",
+      "email": "usama@mail.com",
+      "id": 4,
+      "password": "usama",
+      "p1": "Web",
+      "p2": "Db",
+      "p3": "OOP"
+    }
+  ],
+  "courses": [
+    {
+      "code": "CS-2",
+      "course": "OOP",
+      "id": 2
+    },
+    {
+      "code": "CS-3",
+      "course": "DSA",
+      "id": 3
+    },
+    {
+      "code": "CS-4",
+      "course": "DB",
+      "id": 4
+    },
+    {
+      "code": "CS-1",
+      "course": "Web",
+      "id": 5
+    }
+  ]
+}
